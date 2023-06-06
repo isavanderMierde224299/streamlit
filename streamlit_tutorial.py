@@ -37,7 +37,7 @@ st.info("It's easy to build a Streamlit app")
 st.exception(RuntimeError("RuntimeError exception"))
 st.sidebar.title("This is a sidebar")
 st.sidebar.button("Click here")
-st.sidebar.radio("Pick your gender", ['Male', 'Female'])
+st.sidebar.radio("Pick your gender", ['Male', 'Female'], key="gender_radio")
 
 df = pd.DataFrame(np.random.randn(10, 2), columns=['x', 'y'])
 st.line_chart(df)
