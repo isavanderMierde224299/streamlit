@@ -1,7 +1,5 @@
 streamlit
-time
 matplotlib
-matplotlib.pyplot
 numpy
 pandas
 altair
