@@ -2,6 +2,7 @@ import streamlit as st
 import time
 import streamlit as stimport 
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 import pandas as pd
 import altair as alt
