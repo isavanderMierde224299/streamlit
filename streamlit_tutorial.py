@@ -61,7 +61,5 @@ st.altair_chart(c, use_container_width=True)
 df = pd.DataFrame(np.random.randn(500, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 st.map(df)
 
-if __name__ == '__main__':
-    st.run()
 
 
