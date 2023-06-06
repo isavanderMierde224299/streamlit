@@ -3,7 +3,6 @@ import time
 import numpy as np
 import pandas as pd
 import altair as alt
-import graphviz as graphviz
 
 st.write("Hello, let's learn how to build a Streamlit app together")
 st.title("This is the app title")
@@ -59,18 +58,10 @@ c = alt.Chart(df).mark_circle().encode(
 )
 st.altair_chart(c, use_container_width=True)
 
-st.graphviz_chart('''
-digraph {
-    Big_shark -> Tuna
-    Tuna -> Mackerel
-    Mackerel -> Small_fishes
-    Small_fishes -> Shrimp
-}
-''')
-
 df = pd.DataFrame(np.random.randn(500, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 st.map(df)
 
 if __name__ == '__main__':
     st.run()
+
 
